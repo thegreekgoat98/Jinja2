@@ -15,6 +15,3 @@ def home(request:Request):
 @app.get("/batsman")
 def show(request:Request):
     return templates.TemplateResponse("batsman.html",{"request":request,"batsman":BATSMAN})
-
-
-    
