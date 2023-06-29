@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Just Learning</title>
+    </head>
+    <body>
+        <table class="table">
+            <tr>
+            <th>Name</th>
+            <th>Type</th>
+            </tr>
+            {% for b in batsman %}
+            <tr>
+            <td>
+                {{b.name}}
+            </td>
+            <td>
+                {{b.side}}
+            </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
